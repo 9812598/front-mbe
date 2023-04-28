@@ -27,9 +27,8 @@ export default function ChinaCalc() {
           className="mb-3 ml-2"
           name="massa"
           id="massa"
-          min="1"
+          min="0.5"
           step="0.5"
-          min="0"
           max="30"
           valume={massa}
           onChange={(e) => setMass(e.target.value)}
