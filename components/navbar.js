@@ -10,6 +10,7 @@ export default function Navbar() {
             src="/../public/MBE_LOGO_WHITE.png"
             width={200}
             height={200}
+            alt="MBE logo"
           ></Image>
         </Link>
         <div className="pt-4 flex flex-row items-center justify-between p-12 gap-6">
