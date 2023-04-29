@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import ValCalc from "@/components/ValCalc";
 import RussCalc from "@/components/RussCalc";
 
 export default function Russ() {
@@ -7,9 +7,7 @@ export default function Russ() {
     <div
       className={`flex min-h-screen flex-col items-center justify-between p-24 `}
     >
-      <h2>
-        <Link href="/">ссылка - Главная</Link>
-      </h2>
+      <ValCalc />
       <div className="flex gap-10">
         <RussCalc />
       </div>
