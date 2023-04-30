@@ -34,7 +34,6 @@ export default function ExportDocs() {
 
   return (
     <div>
-      <p>Расчет доставки из Санкт-Петербурга Документов</p>
       <form
         className="flex flex-col justify-center content-center"
         onSubmit={handleSubmit}

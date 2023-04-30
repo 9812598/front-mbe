@@ -4,13 +4,17 @@ import ExportDocs from "@/components/ExportDocs";
 
 export default function ExportDocsPage() {
   return (
-    <div
-      className={`flex min-h-screen flex-col items-center justify-between p-24 `}
+    <div className="flex flex-col min-h-screen">
+      <h1 className="flex flex-row justify-center">Расчет экспорта документов</h1>
+      <div
+      className={`flex flex-row justify-between mt-5 mx-auto max-w-4xl w-full`}
     >
       <ValCalc />
 
       <ExportDocs />
-      <h1>Это страница - Экспорт из России</h1>
+     
     </div>
+    </div>
+    
   );
 }

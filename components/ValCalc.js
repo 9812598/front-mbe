@@ -17,8 +17,8 @@ export default function ValCalc() {
     <div className="flex flex-row  justify-center content-center">
       <div className="min-w-min">
         <Image
-          src="/../public/korob.png"
-          alt="Picture of the author"
+          src="/images/korob.png"
+          alt="Picture of the korob"
           width={200}
           height={150}
         />

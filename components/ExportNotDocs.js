@@ -33,7 +33,6 @@ export default function ExportNotDocs() {
 
   return (
     <div>
-      <p>Расчет доставки из Санкт-Петербурга Грузов</p>
       <form
         className="flex flex-col justify-center content-center"
         onSubmit={handleSubmit}

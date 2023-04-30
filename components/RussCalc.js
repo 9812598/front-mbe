@@ -66,7 +66,6 @@ export default function RussCalc() {
 
   return (
     <div>
-      <p>Расчет доставки Грузов из Санкт-Петербурга</p>
       <form
         className="flex flex-col justify-center content-center mt-3"
         onSubmit={handleSubmit}

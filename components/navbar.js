@@ -7,7 +7,7 @@ export default function Navbar() {
       <div className="-z-50 w-full absolute h-40">
         <Image
           className="-z-50 object-cover absolute left-0 top-0"
-          src="/../public/images/bg-s-dark.png"
+          src="/images/bg-s-dark.png"
           fill
         />
       </div>
@@ -16,7 +16,7 @@ export default function Navbar() {
         <div className="flex gap-5">
           <Link href="/">
             <Image
-              src="/../public/images/MBE_LOGO_WHITE.png"
+              src="/images/MBE_LOGO_WHITE.png"
               width={200}
               height={200}
               alt="MBE logo"

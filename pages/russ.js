@@ -5,10 +5,11 @@ import RussCalc from "@/components/RussCalc";
 export default function Russ() {
   return (
     <div
-      className={`flex min-h-screen flex-col items-center justify-between p-24 `}
+      className={`flex flex-col min-h-screen`}
     >
+      <h1 className="flex flex-row justify-center">Расчет доставки по России</h1>
       <div
-        className={`flex  flex-row items-center  gap-10 justify-between max-w-5xl mx-auto `}
+        className={`flex flex-row justify-between mt-5 mx-auto max-w-4xl w-full `}
       >
         <ValCalc />
         <RussCalc />
