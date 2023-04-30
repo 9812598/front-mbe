@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="flex flex-row items-center justify-between max-w-4xl mx-auto p-5">
       <Image
-        src="/../public/logo.png"
+        src="/../public/images/logo.png"
         width={200}
         height={200}
         alt="MBE logo"

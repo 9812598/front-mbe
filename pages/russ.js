@@ -7,12 +7,12 @@ export default function Russ() {
     <div
       className={`flex min-h-screen flex-col items-center justify-between p-24 `}
     >
-      <ValCalc />
-      <div className="flex gap-10">
+      <div
+        className={`flex  flex-row items-center  gap-10 justify-between max-w-5xl mx-auto `}
+      >
+        <ValCalc />
         <RussCalc />
       </div>
-
-      <h1>Это страница - Доставка по России</h1>
     </div>
   );
 }
