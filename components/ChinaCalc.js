@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import Image from "next/image";
 import { chinaMassData } from "./data/ChinaMassData";
 
 export default function ChinaCalc() {
