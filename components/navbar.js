@@ -3,15 +3,10 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <div className="z-50 ralative w-full">
-      <div className="-z-50 w-full absolute h-40">
-        <Image
-          className="-z-50 object-cover absolute left-0 top-0"
-          src="/images/bg-s-dark.png"
-          fill
-        />
-      </div>
-
+    <div
+      className="relative overflow-hidden w-full bg-cover bg-no-repeat"
+      style={{ backgroundImage: `url(/images/bg-s-dark.png)` }}
+    >
       <div className={`flex flex-col items-center justify-between p-12 `}>
         <div className="flex gap-5">
           <Link href="/">
