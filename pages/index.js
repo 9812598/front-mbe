@@ -1,6 +1,7 @@
 import MainMenu from "@/components/mainMenu";
 import Mission from "@/components/mission";
 import TernKey from "@/components/ternkey";
+import MapAndContact from "@/components/mapandcontact";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <MainMenu />
       <Mission />
       <TernKey />
+      <MapAndContact />
     </div>
   );
 }
