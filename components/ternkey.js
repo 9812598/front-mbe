@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function MyTitle() {
   return (
-    <div className="flex flex-col  items-center justify-between  max-w-5xl mx-auto mt-20">
+    <div className="flex flex-col  items-center justify-between  max-w-5xl mx-auto mt-32">
       <h2 className="font-serif text-2xl font-normal">
         РЕАЛИЗУЕМ ВАШУ ЗАДАЧУ ПОД КЛЮЧ
       </h2>

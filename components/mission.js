@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Mission() {
   return (
-    <div className="flex flex-row items-center justify-between  max-w-5xl mx-auto mt-16">
+    <div className="flex flex-row items-center justify-between  max-w-5xl mx-auto mt-32">
       <div className="basis-2/3">
         <h2 className="font-serif text-2xl font-normal">
           Основная миссия - помочь вам развивать свой бизнес и решать все

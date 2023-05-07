@@ -7,7 +7,10 @@ const myCarousel = () => {
   }, []);
 
   return (
-    <div className=" max-w-5xl mx-auto mt-20">
+    <div className="  mt-28">
+      <h2 className="font-serif text-2xl font-normal text-center mb-28">
+        НАМ ДОВЕРЯЮТ КРУПНЫЕ МИРОВЫЕ БРЕНДЫ
+      </h2>
       <div
         id="carouselDarkVariant"
         class="relative"
@@ -41,11 +44,28 @@ const myCarousel = () => {
             data-te-carousel-item
             data-te-carousel-active
           >
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(19).webp"
-              class="block w-full"
-              alt="Motorbike Smoke"
-            />
+            <div className="flex max-w-6xl mx-auto justify-between pb-12 h-52  object-contain">
+              <img
+                src="/images/carousel/carousel_orange.png"
+                alt="Company witch trust us"
+                className="basis-1/4 w-24 object-contain"
+              />
+              <img
+                src="/images/carousel/carousel_cofeeshop.png"
+                alt="Company witch trust us"
+                className="basis-1/4 w-24 object-contain"
+              />
+              <img
+                src="/images/carousel/carousel_audi.png"
+                alt="Company witch trust us"
+                className="bbasis-1/4 w-24 object-contain"
+              />
+              <img
+                src="/images/carousel/carousel_toyota.png"
+                alt="Company witch trust us"
+                className="basis-1/4 w-24 object-contain"
+              />
+            </div>
           </div>
 
           <div
@@ -53,11 +73,28 @@ const myCarousel = () => {
             data-te-carousel-fade
             data-te-carousel-item
           >
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(35).webp"
-              class="block w-full"
-              alt="Mountaintop"
-            />
+            <div className="flex max-w-6xl mx-auto justify-between pb-12 h-52  object-contain">
+              <img
+                src="/images/carousel/sogaz_audi.png"
+                alt="Company witch trust us"
+                className="basis-1/4 w-24 object-contain"
+              />
+              <img
+                src="/images/carousel/mercedes_audi.png"
+                alt="Company witch trust us"
+                className="basis-1/4 w-24 object-contain"
+              />
+              <img
+                src="/images/carousel/maria_audi.png"
+                alt="Company witch trust us"
+                className="basis-1/4 w-24 object-contain"
+              />
+              <img
+                src="/images/carousel/fazer_audi.png"
+                alt="Company witch trust us"
+                className="basis-1/4 w-24 object-contain"
+              />
+            </div>
           </div>
         </div>
 

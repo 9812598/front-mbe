@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function MapAndContact() {
   return (
     <>
-      <div className="mt-14 relative ">
+      <div className="mt-32 relative ">
         <div className="px-6 absolute left-20 top-16 w-96 h-96 bg-white rounded-lg shadow-lg text-center flex flex-col justify-between p-5">
           <h2 className="m-4 text-base font-semibold text-neutral-600 dark:text-neutral-200">
             КОНТАКТЫ
