@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Mission() {
   return (
     <div className="flex flex-row items-center justify-between  max-w-5xl mx-auto mt-32">

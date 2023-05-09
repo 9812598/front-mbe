@@ -44,7 +44,7 @@ const myCarousel = () => {
             data-te-carousel-item
             data-te-carousel-active
           >
-            <div className="flex max-w-6xl mx-auto justify-between pb-12 h-52  object-contain">
+            <div className="flex max-w-6xl mx-auto justify-between pb-12 h-52 ">
               <img
                 src="/images/carousel/carousel_orange.png"
                 alt="Company witch trust us"
