@@ -1,7 +1,8 @@
 import { Carousel, initTE } from "tw-elements";
 import { useEffect } from "react";
+import Image from "next/image";
 
-const myCarousel = () => {
+const MyCarousel = () => {
   useEffect(() => {
     initTE({ Carousel });
   }, []);
@@ -45,25 +46,33 @@ const myCarousel = () => {
             data-te-carousel-active
           >
             <div className="flex max-w-6xl mx-auto justify-between pb-12 h-52 ">
-              <img
+              <Image
                 src="/images/carousel/carousel_orange.png"
                 alt="Company witch trust us"
                 className="basis-1/4 w-24 object-contain"
+                width={600}
+                height={300}
               />
-              <img
+              <Image
                 src="/images/carousel/carousel_cofeeshop.png"
                 alt="Company witch trust us"
                 className="basis-1/4 w-24 object-contain"
+                width={600}
+                height={300}
               />
-              <img
+              <Image
                 src="/images/carousel/carousel_audi.png"
                 alt="Company witch trust us"
                 className="bbasis-1/4 w-24 object-contain"
+                width={600}
+                height={300}
               />
-              <img
+              <Image
                 src="/images/carousel/carousel_toyota.png"
                 alt="Company witch trust us"
                 className="basis-1/4 w-24 object-contain"
+                width={600}
+                height={300}
               />
             </div>
           </div>
@@ -74,25 +83,33 @@ const myCarousel = () => {
             data-te-carousel-item
           >
             <div className="flex max-w-6xl mx-auto justify-between pb-12 h-52  object-contain">
-              <img
+              <Image
                 src="/images/carousel/sogaz_audi.png"
                 alt="Company witch trust us"
                 className="basis-1/4 w-24 object-contain"
+                width={600}
+                height={300}
               />
-              <img
+              <Image
                 src="/images/carousel/mercedes_audi.png"
                 alt="Company witch trust us"
                 className="basis-1/4 w-24 object-contain"
+                width={600}
+                height={300}
               />
-              <img
+              <Image
                 src="/images/carousel/maria_audi.png"
                 alt="Company witch trust us"
                 className="basis-1/4 w-24 object-contain"
+                width={600}
+                height={300}
               />
-              <img
+              <Image
                 src="/images/carousel/fazer_audi.png"
                 alt="Company witch trust us"
                 className="basis-1/4 w-24 object-contain"
+                width={600}
+                height={300}
               />
             </div>
           </div>
@@ -156,4 +173,4 @@ const myCarousel = () => {
   );
 };
 
-export default myCarousel;
+export default MyCarousel;
