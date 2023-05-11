@@ -1,4 +1,5 @@
 import Image from "next/image";
+import MyCustomButton from "./mycustombutton";
 
 function MyButton({ name, mar }) {
   return (
@@ -48,6 +49,16 @@ export default function Return() {
           <MyButton name="предметы высокой моды" mar="-ml-12" />
           <MyButton name="музыкальные инструменты" mar="-ml-16" />
           <MyButton name="бутылки дорого алкоголя" mar="-ml-20" />
+        </div>
+      </div>
+      <div className="mt-24 bg-white w-4/5 h-36 flex justify-between items-center rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
+        <p className="basis-1/2 px-8 gap-6">
+          Используем всевозможные упаковочные материалы, в том числе и
+          пенопакеты, которые повторяют форму предмета, что позволяет
+          транспортировать вещи в полной безопасности
+        </p>
+        <div className="basis-1/2 flex justify-center">
+          <MyCustomButton text="Заказать специальную доставку" />
         </div>
       </div>
     </div>
