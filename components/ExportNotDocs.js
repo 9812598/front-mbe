@@ -2,6 +2,7 @@ import React, { useReducer, useState } from "react";
 import { ContriesData } from "./data/ContriesData";
 import { ExportNotDocsData } from "./data/ExportNotDocsData";
 import Select from "react-select";
+import CityFromRadio from "./cityfromradio";
 
 const countryOptions = ContriesData.map((opt) => ({
   label: opt.attributes.title,
@@ -32,9 +33,10 @@ export default function ExportNotDocs() {
   }
 
   return (
-    <div>
+    <div className="basis-1/2">
+      <CityFromRadio />
       <form
-        className="flex flex-col justify-center content-center"
+        className="flex flex-col justify-center content-center  mt-2"
         onSubmit={handleSubmit}
       >
         <label htmlFor="massa">Масса, кг</label>

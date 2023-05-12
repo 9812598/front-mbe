@@ -15,7 +15,7 @@ export default function ChinaCalc() {
   const [massa, setMass] = useState(0);
 
   return (
-    <div>
+    <div className="basis-1/2">
       <form
         className="flex flex-col justify-center content-center"
         onSubmit={handleSubmit}

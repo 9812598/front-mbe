@@ -3,6 +3,7 @@ import { CityData } from "./data/CityData";
 import { OptimaData } from "./data/OptimaData";
 import { ExpressData } from "./data/ExpressData";
 import Select from "react-select";
+import CityFromRadio from "./cityfromradio";
 
 // recieve
 const massOptions = OptimaData.map((opt) => ({
@@ -65,12 +66,13 @@ export default function RussCalc() {
   };
 
   return (
-    <div>
+    <div className="basis-1/2">
+      <CityFromRadio />
       <form
         className="flex flex-col justify-center content-center mt-3"
         onSubmit={handleSubmit}
       >
-        <label htmlFor="city">Выберите город</label>
+        <label htmlFor="city">Куда доставлять</label>
         <Select
           options={cityOptions}
           required
@@ -78,7 +80,7 @@ export default function RussCalc() {
           onChange={handleChangeCity}
         />
 
-        <label htmlFor="massa">Выберите массу</label>
+        <label htmlFor="massa">Масса</label>
         <Select
           options={massOptions}
           required
