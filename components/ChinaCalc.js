@@ -35,7 +35,7 @@ export default function ChinaCalc() {
         ></input>
         <button
           type="submit"
-          className="border-solid rounded border-slate-500 border-2"
+          className="mt-2 rounded-md shadow-stone-300 shadow-lg bg-red-600 text-white px-2  py-1 transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
         >
           Расчитать
         </button>

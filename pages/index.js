@@ -6,6 +6,8 @@ import dynamic from "next/dynamic";
 import Return from "@/components/return";
 import Tracking from "@/components/Tracking";
 import Contact from "@/components/contact";
+import More from "@/components/more";
+import HowDoesItWors from "@/components/howdoesitwors";
 
 const MyCarousel = dynamic(() => import("@/components/carousel"), {
   ssr: false,
@@ -19,7 +21,9 @@ export default function Home() {
       <Return />
       <TernKey />
       <Tracking />
+      <HowDoesItWors />
       <MyCarousel />
+      <More />
       <Contact />
       <MapAndContact />
     </div>

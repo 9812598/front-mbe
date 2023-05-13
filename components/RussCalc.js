@@ -90,7 +90,7 @@ export default function RussCalc() {
 
         <button
           type="submit"
-          className="border-solid rounded border-slate-500 border-2  mt-3"
+          className="mt-4 rounded-md shadow-stone-300 shadow-lg bg-red-600 text-white px-2  py-1 transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
         >
           Расчитать
         </button>

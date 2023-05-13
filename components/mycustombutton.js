@@ -1,11 +1,15 @@
+import Link from "next/link";
+
 export default function MyCustomButton({ text }) {
   return (
-    <button
-      href="#contact"
-      className="rounded-md shadow-stone-300 shadow-lg bg-red-600 text-white px-8  py-3 font-serif text-xl font-extralight"
-      onclick="window.location.href='/#contact"
-    >
-      {text}
-    </button>
+    <Link href="/#contact">
+      <button
+        href="#contact"
+        className="rounded-md shadow-stone-300 shadow-lg bg-red-600 text-white px-8  py-3 font-serif text-xl font-extralight transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+        onclick="window.location.href='/#contact"
+      >
+        {text}
+      </button>
+    </Link>
   );
 }

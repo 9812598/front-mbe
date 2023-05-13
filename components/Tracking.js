@@ -19,7 +19,7 @@ export default function Tracking() {
           required
           placeholder="Номер отслеживания"
           type="text"
-          className="w-64 rounded-md m-1"
+          className="w-64 rounded-md m-1 pl-2"
           name="track"
           id="track"
           valume={input}
