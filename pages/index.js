@@ -8,6 +8,8 @@ import Tracking from "@/components/Tracking";
 import Contact from "@/components/contact";
 import More from "@/components/more";
 import HowDoesItWors from "@/components/howdoesitwors";
+import PersonalManager from "@/components/personalmanager";
+import Difference from "@/components/difference";
 
 const MyCarousel = dynamic(() => import("@/components/carousel"), {
   ssr: false,
@@ -22,6 +24,8 @@ export default function Home() {
       <TernKey />
       <Tracking />
       <HowDoesItWors />
+      <PersonalManager />
+      <Difference />
       <MyCarousel />
       <More />
       <Contact />

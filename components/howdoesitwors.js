@@ -49,7 +49,7 @@ function HowButton({ title, pic, number }) {
 
 export default function HowDoesItWors() {
   return (
-    <div className="mt-28 pt-16 flex flex-col items-center justify-center  max-w-5xl mx-auto gap-6 mb-48">
+    <div className="mt-22 pt-16 flex flex-col items-center justify-center  max-w-5xl mx-auto gap-6 mb-36">
       <h2 className="font-serif text-2xl font-normal text-center mb-24">
         КАК ЭТО РАБОТАЕТ?
       </h2>
@@ -66,7 +66,7 @@ export default function HowDoesItWors() {
           number="3"
         />
       </div>
-      <div className="flex justify-between gap-6">
+      <div className="flex justify-between gap-6 mb-12">
         <HowButton
           title="ОФОРМЛЕНИЕ НЕОБХОДИМЫХ ДОКУМЕНТОВ"
           pic="4-icon.png"
@@ -83,6 +83,13 @@ export default function HowDoesItWors() {
           number="6"
         />
       </div>
+      <h2 className="font-serif text-2xl font-normal text-center mb-4">
+        РЕШЕНИЕ ВСЕХ ПРОБЛЕМ
+      </h2>
+      <p className="font-serif text-xl font-normal text-center mb-12">
+        В MBE нет длинных цепочек передачи информации внутри компании, все
+        проблемы и вопросы мы решаем напрямую
+      </p>
     </div>
   );
 }
