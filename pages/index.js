@@ -10,8 +10,13 @@ import More from "@/components/more";
 import HowDoesItWors from "@/components/howdoesitwors";
 import PersonalManager from "@/components/personalmanager";
 import Difference from "@/components/difference";
+import Troubles from "@/components/troubles";
 
 const MyCarousel = dynamic(() => import("@/components/carousel"), {
+  ssr: false,
+});
+
+const MyPhotos = dynamic(() => import("@/components/photos"), {
   ssr: false,
 });
 
@@ -22,12 +27,14 @@ export default function Home() {
       <Mission />
       <Return />
       <TernKey />
+      <Troubles />
       <Tracking />
       <HowDoesItWors />
       <PersonalManager />
       <Difference />
       <MyCarousel />
       <More />
+      <MyPhotos />
       <Contact />
       <MapAndContact />
     </div>

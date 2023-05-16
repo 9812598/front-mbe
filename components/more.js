@@ -3,7 +3,7 @@ import MyCustomButton from "./mycustombutton";
 function MoreButton({ title, pic }) {
   return (
     <div
-      className="basis-1/2 bg-no-repeat object-cover flex justify-start h-72 items-center 8"
+      className="basis-1/2 bg-no-repeat object-cover flex justify-start h-72 items-center "
       style={{ backgroundImage: `url(/images/more/${pic})` }}
     >
       <div className="pt-6 w-1/2 pl-12">
