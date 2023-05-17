@@ -11,7 +11,7 @@ export default function Tracking() {
   }
   return (
     <div
-      className="h-20 bg-slate-600 marker:w-full my-28 flex justify-center items-center "
+      className="h-20 bg-slate-600 marker:w-full mb-28 flex justify-center items-center "
       onSubmit={fornHandler}
     >
       <form className="flex gap-10">

@@ -1,6 +1,9 @@
 import { Tab, initTE } from "tw-elements";
 import { useEffect } from "react";
 // import MyCasesCarousel from "@/components/casescarousel";
+// const MyCaseCarousel = dynamic(() => import("@/components/casescarousel"), {
+//   ssr: false,
+// });
 
 const MyPhotos = () => {
   useEffect(() => {
@@ -8,7 +11,11 @@ const MyPhotos = () => {
   }, []);
 
   return (
-    <div className="flex flex-row items-center justify-center  max-w-5xl mx-auto mt-32 text-center">
+    <div className="flex flex-col items-center justify-center  max-w-5xl mx-auto mt-32 text-center">
+      <div className="">
+        <p>sdsdfvds</p>
+      </div>
+
       <div className="basis-2/3">
         <h2 className="font-serif text-2xl font-normal mb-16">
           НЕМНОГО О НАШЕЙ КОМПАНИИ В ФОТОГРАФИЯХ

@@ -2,7 +2,7 @@ import { Carousel, initTE } from "tw-elements";
 import { useEffect } from "react";
 import Image from "next/image";
 
-const MyCasesCarousel = () => {
+const CasesCarousel = () => {
   useEffect(() => {
     initTE({ Carousel });
   }, []);
@@ -128,4 +128,4 @@ const MyCasesCarousel = () => {
   );
 };
 
-export default MyCasesCarousel;
+export default CasesCarousel;
