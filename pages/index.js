@@ -24,6 +24,7 @@ export default function Home() {
   return (
     <div className="min-h-screen ">
       <MainMenu />
+
       <Mission />
       <Return />
       <TernKey />
@@ -31,10 +32,10 @@ export default function Home() {
       <Tracking />
       <HowDoesItWors />
       <PersonalManager />
+      <MyPhotos />
       <Difference />
       <MyCarousel />
       <More />
-      <MyPhotos />
       <Contact />
       <MapAndContact />
     </div>

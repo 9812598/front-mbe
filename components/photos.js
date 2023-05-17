@@ -1,9 +1,21 @@
 import { Tab, initTE } from "tw-elements";
 import { useEffect } from "react";
-// import MyCasesCarousel from "@/components/casescarousel";
-// const MyCaseCarousel = dynamic(() => import("@/components/casescarousel"), {
-//   ssr: false,
-// });
+import dynamic from "next/dynamic";
+
+const MyCaseCarousel = dynamic(() => import("@/components/casescarousel"), {
+  ssr: false,
+});
+
+const MyOffficeCarousel = dynamic(
+  () => import("@/components/offficecarousel"),
+  {
+    ssr: false,
+  }
+);
+
+const MyAutoCarousel = dynamic(() => import("@/components/autocarousel"), {
+  ssr: false,
+});
 
 const MyPhotos = () => {
   useEffect(() => {
@@ -11,11 +23,7 @@ const MyPhotos = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center  max-w-5xl mx-auto mt-32 text-center">
-      <div className="">
-        <p>sdsdfvds</p>
-      </div>
-
+    <div className="flex flex-col items-center justify-center  max-w-6xl mx-auto mt-32 text-center">
       <div className="basis-2/3">
         <h2 className="font-serif text-2xl font-normal mb-16">
           НЕМНОГО О НАШЕЙ КОМПАНИИ В ФОТОГРАФИЯХ
@@ -78,7 +86,7 @@ const MyPhotos = () => {
               aria-labelledby="tabs-home-tab01"
               data-te-tab-active=""
             >
-              Tab 1 content
+              <MyOffficeCarousel />
             </div>
             <div
               className="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
@@ -86,7 +94,7 @@ const MyPhotos = () => {
               role="tabpanel"
               aria-labelledby="tabs-profile-tab01"
             >
-              Tab 2 content
+              <MyCaseCarousel />
             </div>
             <div
               className="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
@@ -94,7 +102,7 @@ const MyPhotos = () => {
               role="tabpanel"
               aria-labelledby="tabs-profile-tab01"
             >
-              Tab 3 content
+              <MyAutoCarousel />
             </div>
           </div>
         </div>

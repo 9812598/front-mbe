@@ -2,7 +2,7 @@ import { Carousel, initTE } from "tw-elements";
 import { useEffect } from "react";
 import Image from "next/image";
 
-const CaseCarousel = () => {
+const OffficeCarousel = () => {
   useEffect(() => {
     initTE({ Carousel });
   }, []);
@@ -10,7 +10,7 @@ const CaseCarousel = () => {
   return (
     <div className="max-w-5xl mx-auto">
       <div
-        id="carouselExampleCrossfade"
+        id="carouselExampleCrossfade2"
         className="relative"
         data-te-carousel-init=""
         data-te-carousel-slide=""
@@ -22,7 +22,7 @@ const CaseCarousel = () => {
         >
           <button
             type="button"
-            data-te-target="#carouselExampleCrossfade"
+            data-te-target="#carouselExampleCrossfade2"
             data-te-slide-to={0}
             data-te-carousel-active=""
             className="mx-[3px] box-content h-[3px] w-[20px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
@@ -31,59 +31,38 @@ const CaseCarousel = () => {
           />
           <button
             type="button"
-            data-te-target="#carouselExampleCrossfade"
+            data-te-target="#carouselExampleCrossfade2"
             data-te-slide-to={1}
             className="mx-[3px] box-content h-[3px] w-[20px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
             aria-label="Slide 2"
           />
           <button
             type="button"
-            data-te-target="#carouselExampleCrossfade"
+            data-te-target="#carouselExampleCrossfade2"
             data-te-slide-to={2}
             className="mx-[3px] box-content h-[3px] w-[20px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
             aria-label="Slide 3"
           />
           <button
             type="button"
-            data-te-target="#carouselExampleCrossfade"
+            data-te-target="#carouselExampleCrossfade2"
             data-te-slide-to={3}
             className="mx-[3px] box-content h-[3px] w-[20px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
             aria-label="Slide 4"
           />
           <button
             type="button"
-            data-te-target="#carouselExampleCrossfade"
+            data-te-target="#carouselExampleCrossfade2"
             data-te-slide-to={4}
             className="mx-[3px] box-content h-[3px] w-[20px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
             aria-label="Slide 5"
           />
           <button
             type="button"
-            data-te-target="#carouselExampleCrossfade"
+            data-te-target="#carouselExampleCrossfade2"
             data-te-slide-to={5}
             className="mx-[3px] box-content h-[3px] w-[20px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
             aria-label="Slide 6"
-          />
-          <button
-            type="button"
-            data-te-target="#carouselExampleCrossfade"
-            data-te-slide-to={6}
-            className="mx-[3px] box-content h-[3px] w-[20px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-            aria-label="Slide 7"
-          />
-          <button
-            type="button"
-            data-te-target="#carouselExampleCrossfade"
-            data-te-slide-to={7}
-            className="mx-[3px] box-content h-[3px] w-[20px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-            aria-label="Slide 8"
-          />
-          <button
-            type="button"
-            data-te-target="#carouselExampleCrossfade"
-            data-te-slide-to={8}
-            className="mx-[3px] box-content h-[3px] w-[20px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-            aria-label="Slide 9"
           />
         </div>
         {/*Carousel items*/}
@@ -96,7 +75,7 @@ const CaseCarousel = () => {
             data-te-carousel-active=""
           >
             <Image
-              src="/images/photoscarousel/casecarousel/1.jpg"
+              src="/images/photoscarousel/offficecarousel/1.jpg"
               height={400}
               width={400}
               className="mx-auto"
@@ -110,7 +89,7 @@ const CaseCarousel = () => {
             data-te-carousel-item=""
           >
             <Image
-              src="/images/photoscarousel/casecarousel/2.jpg"
+              src="/images/photoscarousel/offficecarousel/2.jpg"
               height={400}
               width={400}
               className="mx-auto"
@@ -124,7 +103,7 @@ const CaseCarousel = () => {
             data-te-carousel-item=""
           >
             <Image
-              src="/images/photoscarousel/casecarousel/3.jpg"
+              src="/images/photoscarousel/offficecarousel/3.jpg"
               height={400}
               width={400}
               className="mx-auto"
@@ -139,7 +118,7 @@ const CaseCarousel = () => {
             data-te-carousel-item=""
           >
             <Image
-              src="/images/photoscarousel/casecarousel/4.jpg"
+              src="/images/photoscarousel/offficecarousel/4.jpg"
               height={400}
               width={400}
               className="mx-auto"
@@ -153,7 +132,7 @@ const CaseCarousel = () => {
             data-te-carousel-item=""
           >
             <Image
-              src="/images/photoscarousel/casecarousel/5.jpg"
+              src="/images/photoscarousel/offficecarousel/5.jpg"
               height={400}
               width={400}
               className="mx-auto"
@@ -167,53 +146,11 @@ const CaseCarousel = () => {
             data-te-carousel-item=""
           >
             <Image
-              src="/images/photoscarousel/casecarousel/6.jpg"
+              src="/images/photoscarousel/offficecarousel/6.jpg"
               height={400}
               width={400}
               className="mx-auto"
               alt="6"
-            />
-          </div>
-          {/*Seven item*/}
-          <div
-            className="h-96 relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
-            data-te-carousel-fade=""
-            data-te-carousel-item=""
-          >
-            <Image
-              src="/images/photoscarousel/casecarousel/7.jpg"
-              height={400}
-              width={400}
-              className="mx-auto"
-              alt="7"
-            />
-          </div>
-          {/*Eight item*/}
-          <div
-            className="h-96 relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
-            data-te-carousel-fade=""
-            data-te-carousel-item=""
-          >
-            <Image
-              src="/images/photoscarousel/casecarousel/8.jpg"
-              height={400}
-              width={400}
-              className="mx-auto"
-              alt="8"
-            />
-          </div>
-          {/*Nine item*/}
-          <div
-            className="h-96 relative float-left -mr-[100%] hidden w-full !transform-none opacity-0 transition-opacity duration-[600ms] ease-in-out motion-reduce:transition-none"
-            data-te-carousel-fade=""
-            data-te-carousel-item=""
-          >
-            <Image
-              src="/images/photoscarousel/casecarousel/9.jpg"
-              height={400}
-              width={400}
-              className="mx-auto"
-              alt="9"
             />
           </div>
         </div>
@@ -222,7 +159,7 @@ const CaseCarousel = () => {
         <button
           className="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
           type="button"
-          data-te-target="#carouselExampleCrossfade"
+          data-te-target="#carouselExampleCrossfade2"
           data-te-slide="prev"
         >
           <span className="inline-block h-8 w-8">
@@ -249,7 +186,7 @@ const CaseCarousel = () => {
         <button
           className="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
           type="button"
-          data-te-target="#carouselExampleCrossfade"
+          data-te-target="#carouselExampleCrossfade2"
           data-te-slide="next"
         >
           <span className="inline-block h-8 w-8">
@@ -277,4 +214,4 @@ const CaseCarousel = () => {
   );
 };
 
-export default CaseCarousel;
+export default OffficeCarousel;
