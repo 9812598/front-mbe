@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import Image from "next/image";
+import React, { useState } from "react";
 import { chinaMassData } from "./data/ChinaMassData";
 
 export default function ChinaCalc() {
@@ -9,9 +8,11 @@ export default function ChinaCalc() {
     let myChinaData = chinaMassData.find(
       (item) => item.attributes.mass == massa
     );
-    setPrice(myChinaData.attributes.price);
+    setPriceOptima(myChinaData.attributes.price_optima);
+    setPriceExpress(myChinaData.attributes.price_express);
   }
-  const [price, setPrice] = useState(0);
+  const [priceOptima, setPriceOptima] = useState(0);
+  const [priceExpress, setPriceExpress] = useState(0);
   const [massa, setMass] = useState(0);
 
   return (
@@ -40,13 +41,37 @@ export default function ChinaCalc() {
           Расчитать
         </button>
       </form>
-      <p className="mt-3 text-center">
-        Стоимость доставки до двери: <strong>{price}</strong> рублей
-      </p>
 
-      <p className="mt-3 text-center">
-        Время доставки: <strong>55</strong> дней
-      </p>
+      <div className="flex flex-col">
+        <div
+          className="mt-4 flex flex-row gap-3 justify-center justify-items-center"
+          id="OptomaBlock"
+        >
+          <div> Тариф ОПТИМА</div>
+          <div>
+            <p>
+              Стоимость до двери: <b>{priceOptima}</b> рублей
+            </p>
+            <p>
+              Время доставки: <b>55</b> дней
+            </p>
+          </div>
+        </div>
+        <div
+          className="mt-4 flex flex-row gap-3 justify-center justify-items-center"
+          id="ExpressBlock"
+        >
+          <div>Тариф ЭКСПРЕСС</div>
+          <div>
+            <p>
+              Стоимость до двери: <b>{priceExpress}</b> рублей
+            </p>
+            <p>
+              Время доставки: <b>40</b> дней
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

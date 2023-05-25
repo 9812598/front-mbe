@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from "react";
+import React, { useState } from "react";
 import { CityData } from "./data/CityData";
 import { OptimaData } from "./data/OptimaData";
 import { ExpressData } from "./data/ExpressData";

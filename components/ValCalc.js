@@ -70,7 +70,7 @@ export default function ValCalc() {
             </button>
           </form>
           <p className="mt-3 text-center">
-            Объемный вес = <strong>{vol}</strong> cm3
+            Объемный вес = <strong>{vol}</strong> кг
           </p>
         </div>
       </div>

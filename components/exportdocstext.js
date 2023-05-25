@@ -2,8 +2,9 @@ export default function ExportDocsText() {
   return (
     <div className="mt-28 mb-14 flex flex-col items-start justify-between max-w-5xl mx-auto gap-6">
       <h2 className="mb-14 self-center font-serif text-2xl font-normal">
-        В отличие от других курьерских служб?
+        Хотите отправить документы в другую страну?
       </h2>
+      <p>В отличие от других курьерских служб?</p>
       <p>
         Мы предлагаем доставку по всему миру, что означает, что вы можете
         отправить посылку в любую страну, куда бы вы ни хотели.
