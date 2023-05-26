@@ -1,22 +1,15 @@
 import MainMenu from "@/components/mainMenu";
+import Tracking from "@/components/Tracking";
 import Mission from "@/components/mission";
 import TernKey from "@/components/ternkey";
-import MapAndContact from "@/components/mapandcontact";
-import dynamic from "next/dynamic";
-import Return from "@/components/return";
-import Tracking from "@/components/Tracking";
-import Contact from "@/components/contact";
-import More from "@/components/more";
 import HowDoesItWors from "@/components/howdoesitwors";
-import PersonalManager from "@/components/personalmanager";
-import Difference from "@/components/difference";
-import Troubles from "@/components/troubles";
+import dynamic from "next/dynamic";
 
-const MyCarousel = dynamic(() => import("@/components/carousel"), {
+const MyMyCarousel = dynamic(() => import("@/components/MyNavbar"), {
   ssr: false,
 });
 
-const MyPhotos = dynamic(() => import("@/components/photos"), {
+const MyCollabse = dynamic(() => import("@/components/collabse"), {
   ssr: false,
 });
 
@@ -24,20 +17,12 @@ export default function Home() {
   return (
     <div className="min-h-screen ">
       <MainMenu />
-
-      <Mission />
-      <Return />
-      <TernKey />
-      <Troubles />
       <Tracking />
+      <MyCollabse />
+      <MyMyCarousel />
+      <Mission />
+      <TernKey />
       <HowDoesItWors />
-      <PersonalManager />
-      <MyPhotos />
-      <Difference />
-      <MyCarousel />
-      <More />
-      <Contact />
-      <MapAndContact />
     </div>
   );
 }
