@@ -18,7 +18,7 @@ function MainMenuButton({ title, text, mylink }) {
               data-te-ripple-init
               data-te-ripple-color="light"
             >
-              Расчитать
+              Рассчитать
             </button>
           </Link>
         </div>
@@ -38,7 +38,7 @@ export default function MainMenu() {
         mylink="/russ"
       />
       <MainMenuButton
-        title="Экспорт документов"
+        title="Экспорт из России"
         text="Стоимость и сроки в разные страны"
         mylink="/ExportDocsPage"
       />

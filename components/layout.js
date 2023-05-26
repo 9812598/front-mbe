@@ -1,11 +1,16 @@
-import Navbar from "./navbar";
 import Footer from "./footer";
 import Image from "next/image";
+
+import dynamic from "next/dynamic";
+
+const MyNavbar = dynamic(() => import("@/components/navbar"), {
+  ssr: false,
+});
 
 export default function Layout({ children }) {
   return (
     <>
-      <Navbar />
+      <MyNavbar />
       <main>
         <div className="-z-50 w-full absolute h-full">
           <Image

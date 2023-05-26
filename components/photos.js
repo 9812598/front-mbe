@@ -23,7 +23,10 @@ const MyPhotos = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center  max-w-6xl mx-auto mt-32 text-center">
+    <div
+      id="photos"
+      className="flex flex-col items-center justify-center  max-w-6xl mx-auto mt-32 text-center"
+    >
       <div className="basis-2/3">
         <h2 className="font-serif text-2xl font-normal mb-16">
           НЕМНОГО О НАШЕЙ КОМПАНИИ В ФОТОГРАФИЯХ

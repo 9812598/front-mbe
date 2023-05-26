@@ -1,10 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Collapse, Dropdown, initTE } from "tw-elements";
+import { useEffect } from "react";
 
-export default function Navbar() {
+const Navbar = () => {
+  useEffect(() => {
+    initTE({ Collapse, Dropdown });
+  }, []);
   return (
     <div
-      className="relative overflow-hidden w-full bg-cover bg-no-repeat h-full"
+      className="relative overflow-hidden w-full bg-cover bg-no-repeat "
       style={{ backgroundImage: `url(/images/bg-s-dark.png)` }}
     >
       <div className="mx-auto max-w-6xl">
@@ -62,43 +67,55 @@ export default function Navbar() {
               >
                 <li className="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref="">
                   {/* Dashboard link */}
-                  <a
-                    className=" hover:text-slate-300 focus:text-slate-200  lg:px-2"
-                    href="#"
+                  <Link
+                    className="inline-block   transition duration-150 ease-in-out hover:text-slate-300 focus:text-slate-200  lg:px-2"
                     data-te-nav-link-ref=""
+                    data-te-collapse-init=""
+                    data-te-ripple-init=""
+                    data-te-ripple-color="light"
+                    href="/#collapseExample"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
                   >
                     Рассчитать стоимость
-                  </a>
+                  </Link>
                 </li>
                 {/* Team link */}
                 <li className="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref="">
-                  <a
+                  <Link
                     className="hover:text-slate-300 focus:text-slate-200  lg:px-2"
-                    href="#"
+                    href="/#mission"
                     data-te-nav-link-ref=""
                   >
                     О компании
-                  </a>
+                  </Link>
                 </li>
                 {/* Projects link */}
                 <li className="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref="">
-                  <a
+                  <Link
                     className="hover:text-slate-300 focus:text-slate-200  lg:px-2"
-                    href="#"
+                    href="/whymbe"
                     data-te-nav-link-ref=""
                   >
                     Почему MBE?
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref="">
-                  <a
-                    className="hover:text-slate-300 focus:text-slate-200  lg:px-2"
-                    href="#"
+                  <Link
+                    className="inline-block   transition duration-150 ease-in-out hover:text-slate-300 focus:text-slate-200  lg:px-2"
                     data-te-nav-link-ref=""
+                    data-te-collapse-init=""
+                    data-te-ripple-init=""
+                    data-te-ripple-color="light"
+                    href="/#collapseExample2"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample2"
                   >
                     Полезная информация
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -107,12 +124,58 @@ export default function Navbar() {
               <p className="p-3  ">+7 (812) 332-05-25</p>
               <p lassName="p-3  ">0008@mbe.spb.ru</p>
             </div>
+            <div
+              className="!visible hidden"
+              id="collapseExample"
+              data-te-collapse-item=""
+            >
+              <div className="block text-black rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
+                <ul>
+                  <li>
+                    <Link href="/russ">Доставка по России</Link>
+                  </li>
+                  <li>
+                    <Link href="/ImportDocs">Импорт документов</Link>
+                  </li>
+                  <li>
+                    <Link href="/china">Импорт из Китая</Link>
+                  </li>
+                  <li>
+                    <Link href="/ExportDocsPage">Экспорт документов</Link>
+                  </li>
+                  <li>
+                    <Link href="/ExportNotDocsPage">Экспорт грузов</Link>
+                  </li>
+                  <li>
+                    <Link href="/import">Импорт с других стран</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              className="!visible hidden"
+              id="collapseExample2"
+              data-te-collapse-item=""
+            >
+              <div className="block text-black rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
+                <ul>
+                  <li>
+                    <Link href="/helpful/#photos">Кейсы</Link>
+                  </li>
+
+                  <li>
+                    <Link href="/helpful/#contact">Контакты и реквизиты</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </nav>
       </div>
     </div>
   );
-}
+};
 
 {
   /* <div className={`flex flex-col items-center justify-between p-12 `}>
@@ -136,3 +199,5 @@ export default function Navbar() {
         </div>
       </div> */
 }
+
+export default Navbar;
