@@ -21,7 +21,7 @@ export default function ChinaCalc() {
         className="flex flex-col justify-center content-center"
         onSubmit={handleSubmit}
       >
-        <label htmlFor="massa">Масса, кг</label>
+        <label htmlFor="massa">Вес, кг</label>
         <input
           required
           type="number"
@@ -38,7 +38,7 @@ export default function ChinaCalc() {
           type="submit"
           className="mt-2 rounded-md shadow-stone-300 shadow-lg bg-red-600 text-white px-2  py-1 transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
         >
-          Расчитать
+          Рассчитать
         </button>
       </form>
 

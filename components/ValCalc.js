@@ -18,7 +18,7 @@ export default function ValCalc() {
       <div className="flex  justify-start content-center">
         <div className="min-w-min">
           <Image
-            src="/images/korob.png"
+            src="/images/korob2.png"
             alt="Picture of the korob"
             width={200}
             height={150}
@@ -66,7 +66,7 @@ export default function ValCalc() {
               type="submit"
               className="mt-1 rounded-md shadow-stone-300 shadow-lg bg-red-600 text-white px-2  py-1 transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
             >
-              Расчитать
+              Рассчитать
             </button>
           </form>
           <p className="mt-3 text-center">

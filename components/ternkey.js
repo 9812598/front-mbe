@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 function MyTitle() {
   return (
@@ -27,7 +26,7 @@ export default function TernKey() {
           <h5 className="mb-4 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
             {title}
           </h5>
-          <Link href="/#contact" className="flex">
+          <Link href="/helpful/#contact" className="flex">
             <button
               type="button"
               className="bg-red-600 text-white  mb-4 justify-end rounded px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"

@@ -6,7 +6,7 @@ export default function MapAndContact() {
     <>
       <div className="mt-32 relative ">
         <div className="px-6 absolute left-20 top-16 w-96 h-96 bg-white rounded-lg shadow-lg text-center flex flex-col justify-between p-5">
-          <h2 className="m-4 text-base font-semibold text-neutral-600 dark:text-neutral-200">
+          <h2 className="m-4 text-base font-semibold text-neutral-600 ">
             КОНТАКТЫ
           </h2>
 
@@ -25,16 +25,17 @@ export default function MapAndContact() {
               атриума, слева от фонтана)
             </p>
           </div>
-          <a
+          <Link
             target="_blank"
             type="button"
-            className="mb-4 justify-end rounded bg-slate-200 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+            className="rounded-md shadow-stone-300 shadow-lg bg-red-600 text-white px-8  py-3 font-serif font-extralight transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+            // className="mb-4 justify-end rounded bg-slate-200 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-black shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
             data-te-ripple-init
             data-te-ripple-color="light"
             href="https://yandex.ru/maps/2/saint-petersburg/?ll=30.315635%2C59.938951&mode=routes&rtext=~59.957850%2C30.342232&rtt=mt&ruri=~&z=11"
           >
             Построить маршрут
-          </a>
+          </Link>
 
           <div className="flex">
             <div className="basis-1/4">

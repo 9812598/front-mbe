@@ -15,7 +15,7 @@ function FirstNotStandartButton() {
         </h5>
       </div>
       <div className="ml-12 mt-16">
-        <Link href="/#contact">
+        <Link href="/helpful/#contact">
           <button
             href="#contact"
             className=" rounded-md shadow-stone-300 shadow-lg bg-red-600 text-white px-6  py-3 font-serif text-xl font-extralight transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
