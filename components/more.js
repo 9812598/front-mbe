@@ -7,9 +7,7 @@ function MoreButton({ title, pic }) {
       style={{ backgroundImage: `url(/images/more/${pic})` }}
     >
       <div className="pt-6 w-1/2 pl-12">
-        <h5 className="mb-12 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-          {title}
-        </h5>
+        <h4 className="mb-12 text-xl ">{title}</h4>
       </div>
     </div>
   );
@@ -17,8 +15,8 @@ function MoreButton({ title, pic }) {
 
 export default function More() {
   return (
-    <div className="mt-28 pt-16 flex flex-col items-center justify-center  max-w-5xl mx-auto gap-6 mb-48">
-      <h2 className="font-serif text-2xl font-normal text-center mb-24">
+    <div className="mt-28 pt-16 flex flex-col items-center justify-center  max-w-5xl mx-auto gap-6">
+      <h2 className="text-xl font-semibold  text-center mb-24">
         {
           ' Обращаясь в MBE, вы получаете больше, чем транспортировку из пункта "А" в пункт "Б" '
         }

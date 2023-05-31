@@ -104,7 +104,7 @@ export default function RussCalc() {
           <div> Тариф ОПТИМА</div>
           <div>
             <p>
-              Стоимость до двери: <b>{cargo.optimaPrice}</b> рублей
+              Стоимость до двери: <b>{cargo.optimaPrice}</b> долларов
             </p>
             <p>
               Время доставки: <b>{cargo.optimaTime}</b> дней
@@ -118,7 +118,7 @@ export default function RussCalc() {
           <div>Тариф ЭКСПРЕСС</div>
           <div>
             <p>
-              Стоимость до двери: <b>{cargo.expressPrice}</b> рублей
+              Стоимость до двери: <b>{cargo.expressPrice}</b> долларов
             </p>
             <p>
               Время доставки: <b>{cargo.expressTime}</b> дней

@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 import { Menu } from "@headlessui/react";
 
-const Navbar2 = () => {
+const Navbar = () => {
   useEffect(() => {
     initTE({ Collapse, Dropdown });
   }, []);
@@ -283,4 +283,4 @@ const Navbar2 = () => {
 {
 }
 
-export default Navbar2;
+export default Navbar;

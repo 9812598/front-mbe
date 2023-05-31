@@ -3,14 +3,14 @@ import Image from "next/image";
 
 import dynamic from "next/dynamic";
 
-const MyNavbar2 = dynamic(() => import("@/components/navbar2"), {
+const MyNavbar = dynamic(() => import("@/components/navbar"), {
   ssr: false,
 });
 
 export default function Layout({ children }) {
   return (
     <>
-      <MyNavbar2 />
+      <MyNavbar />
 
       <main>
         <div className="-z-50 w-full absolute h-full ">

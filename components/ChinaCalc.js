@@ -50,7 +50,7 @@ export default function ChinaCalc() {
           <div> Тариф ОПТИМА</div>
           <div>
             <p>
-              Стоимость до двери: <b>{priceOptima}</b> рублей
+              Стоимость до двери: <b>{priceOptima}</b> долларов
             </p>
             <p>
               Время доставки: <b>55</b> дней
@@ -64,7 +64,7 @@ export default function ChinaCalc() {
           <div>Тариф ЭКСПРЕСС</div>
           <div>
             <p>
-              Стоимость до двери: <b>{priceExpress}</b> рублей
+              Стоимость до двери: <b>{priceExpress}</b> долларов
             </p>
             <p>
               Время доставки: <b>40</b> дней

@@ -25,7 +25,7 @@ export default function Tracking() {
           valume={input}
           onChange={(e) => setInput(e.target.value)}
         ></input>
-        <button className="submit rounded-xl border-2 border-slate-600 p-2 text-white bg-slate-500 ">
+        <button className="px-6 pb-2 pt-2.5 submit rounded-xl border-2 border-slate-600 text-white bg-slate-500 text-xs uppercase">
           Отследить посылку
         </button>
       </form>

@@ -8,8 +8,8 @@ const MyCarousel = () => {
   }, []);
 
   return (
-    <div className="  mt-28">
-      <h2 className="font-serif text-2xl font-normal text-center mb-28">
+    <div className="py-12 bg-gray-100 mb-28">
+      <h2 className="text-xl font-semibold text-center py-16">
         НАМ ДОВЕРЯЮТ КРУПНЫЕ МИРОВЫЕ БРЕНДЫ
       </h2>
       <div

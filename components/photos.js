@@ -25,17 +25,17 @@ const MyPhotos = () => {
   return (
     <div
       id="photos"
-      className="flex flex-col items-center justify-center  max-w-6xl mx-auto mt-32 text-center"
+      className="flex flex-col items-center justify-center  max-w-6xl mx-auto pt-28 text-center "
     >
       <div className="basis-2/3">
-        <h2 className="font-serif text-2xl font-normal mb-16">
+        <h2 className="text-xl font-semibold  mb-16">
           НЕМНОГО О НАШЕЙ КОМПАНИИ В ФОТОГРАФИЯХ
         </h2>
 
         <div>
           {/*Tabs navigation*/}
           <ul
-            className="mb-5 flex list-none flex-row flex-wrap border-b-0 pl-0 font-serif text-base font-normal"
+            className="mb-5 flex list-none flex-row flex-wrap border-b-0 pl-0 "
             role="tablist"
             data-te-nav-ref=""
           >

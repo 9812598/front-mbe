@@ -17,12 +17,12 @@ function DifferentButton({ text, number }) {
 export default function Difference() {
   return (
     <div className="mt-28 pt-16 flex flex-col items-center justify-center  max-w-5xl mx-auto gap-6 mb-36">
-      <h2 className="font-serif text-2xl font-normal text-center mb-4">
+      <h2 className="text-xl font-semibold text-center mb-4">
         ЧЕМ МЫ ОТЛИЧАЕМСЯ ОТ КОНКУРЕНТОВ?
       </h2>
-      <p className="font-serif text-xl font-normal text-center mb-12 place-content-center place-items-center">
+      <h4 className="text-xl text-center mb-12 place-content-center place-items-center">
         Отсутствие отрицательных отзывов в интернете говорит само за себя
-      </p>
+      </h4>
       <div className="grid grid-cols-2 grid-rows-3 gap-x-8 gap-y-4 ">
         <DifferentButton
           text="Сделаем все за вас: упакуем, заполним документы, доставим и уведомим"
@@ -50,11 +50,11 @@ export default function Difference() {
           number="6"
         />
       </div>
-      <p className="font-serif text-xl font-normal text-center mb-12">
+      <h4 className="text-xl text-center mb-12">
         Большой поток отправлений позволяет нам оказывать качественный сервис и
         не брать за это дополнительную плату, в отличие от других курьерских
         служб
-      </p>
+      </h4>
       <MyCustomButton text="Расчитать стоимость" />
     </div>
   );

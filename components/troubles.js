@@ -16,11 +16,11 @@ function MyTroubleButton({ image, text }) {
 
 export default function Troubles() {
   return (
-    <div className="bg-white mt-32 py-12">
+    <div className="bg-white  py-32">
       <div className="flex flex-col  items-center justify-between  max-w-5xl mx-auto ">
-        <h2 className="font-serif text-2xl font-normal text-center">
-          С КАКИМИ ПРОБЛЕМАМИ ВЫ СТОЛКНЕТЕСЬ, ПРИ ПОПЫТКЕ ОТПРАВИТЬ ПОСЫЛКУ
-          САМОСТОЯТЕЛЬНО ИЛИ ОБРАЩАЯСЬ В ДРУГУЮ КУРЬЕРСКУЮ СЛУЖБУ
+        <h2 className="text-xl font-semibold  text-center">
+          С какими проблемами вы столкнетесь, при попытке отправить посылку
+          самостоятельно или обращаясь в другую курьерскую службу
         </h2>
         <div className="grid grid-cols-4 grid-rows-3 w-100% gap-8 mt-16  justify-center justify-items-center place-content-center">
           <div className="col-start-2 row-start-1 ">

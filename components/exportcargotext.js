@@ -1,7 +1,7 @@
 export default function ExportCargoText() {
   return (
     <div className="mt-28 mb-14 flex flex-col items-start justify-between max-w-5xl mx-auto gap-6">
-      <h2 className="mb-14 self-center font-serif text-2xl font-normal">
+      <h2 className="mb-14 self-center text-xl font-semibold ">
         Почему стоит выбрать нас?
       </h2>
       <p>

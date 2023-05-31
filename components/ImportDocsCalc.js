@@ -55,7 +55,7 @@ export default function ImportDocsCalc() {
         >
           <div>
             <p>
-              Стоимость до двери: <b>{price}</b> рублей
+              Стоимость до двери: <b>{price}</b> долларов
             </p>
             <p>
               Время доставки: <b>{time}</b> дней

@@ -3,22 +3,18 @@ import Link from "next/link";
 function FirstNotStandartButton() {
   return (
     <div
-      className="basis-1/3 bg-no-repeat object-cover flex flex-col justify-start h-96 items-start w-276px"
+      className="basis-1/3 bg-no-repeat object-cover flex flex-col justify-start h-96 items-start w-276px "
       style={{ backgroundImage: `url(/images/howdoesitwors/1-icon.png)` }}
     >
       <div className="pt-6 w-1/2 pl-12 ">
-        <h5 className="mb-6 text-2xl font-semibold leading-tight text-neutral-800 dark:text-neutral-50">
-          1
-        </h5>
-        <h5 className="mb-2 text-lg font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-          ОФОРМЛЕНИЕ ЗАЯВКИ
-        </h5>
+        <h2 className="mb-6 text-xl font-semibold  ">1</h2>
+        <h5 className="mb-2 text-xl ">ОФОРМЛЕНИЕ ЗАЯВКИ</h5>
       </div>
       <div className="ml-12 mt-16">
         <Link href="/helpful/#contact">
           <button
             href="#contact"
-            className=" rounded-md shadow-stone-300 shadow-lg bg-red-600 text-white px-6  py-3 font-serif text-xl font-extralight transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+            className=" rounded-md shadow-stone-300 shadow-lg bg-red-600 text-white px-6  py-3 text-xs uppercase  transition duration-150 ease-in-out hover:bg-red-700 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
             onclick="window.location.href='/#contact"
           >
             Оставить заявку
@@ -32,16 +28,12 @@ function FirstNotStandartButton() {
 function HowButton({ title, pic, number }) {
   return (
     <div
-      className="basis-1/3 bg-no-repeat object-cover flex justify-start h-96 items-start w-276px"
+      className="basis-1/3 bg-no-repeat object-cover flex justify-start h-96 items-start w-276px "
       style={{ backgroundImage: `url(/images/howdoesitwors/${pic})` }}
     >
       <div className="pt-6 w-1/2 pl-12">
-        <h5 className="mb-6 text-2xl font-semibold leading-tight text-neutral-800 dark:text-neutral-50">
-          {number}
-        </h5>
-        <h5 className="mb-2 text-lg font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-          {title}
-        </h5>
+        <h2 className="mb-6 text-xl font-semibold ">{number}</h2>
+        <h3 className="mb-2 text-xl">{title}</h3>
       </div>
     </div>
   );
@@ -49,8 +41,8 @@ function HowButton({ title, pic, number }) {
 
 export default function HowDoesItWors() {
   return (
-    <div className="mt-22 pt-16 flex flex-col items-center justify-center  max-w-5xl mx-auto gap-6 mb-36">
-      <h2 className="font-serif text-2xl font-normal text-center mb-24">
+    <div className="mt-32  flex flex-col items-center justify-center  max-w-5xl mx-auto gap-6 ">
+      <h2 className="text-center mb-16 text-xl font-semibold ">
         КАК ЭТО РАБОТАЕТ?
       </h2>
       <div className="flex justify-between gap-3">
@@ -83,10 +75,10 @@ export default function HowDoesItWors() {
           number="6"
         />
       </div>
-      <h2 className="font-serif text-2xl font-normal text-center mb-4">
+      <h2 className="text-xl font-semibold  text-center mb-4">
         РЕШЕНИЕ ВСЕХ ПРОБЛЕМ
       </h2>
-      <p className="font-serif text-xl font-normal text-center mb-12">
+      <p className=" text-center mb-12">
         В MBE нет длинных цепочек передачи информации внутри компании, все
         проблемы и вопросы мы решаем напрямую
       </p>

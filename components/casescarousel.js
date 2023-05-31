@@ -220,7 +220,7 @@ const CaseCarousel = () => {
 
         {/*Carousel controls - prev item*/}
         <button
-          className="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+          className="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 p-0 text-center text-black opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-black hover:no-underline hover:opacity-90 hover:outline-none focus:text-black focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
           type="button"
           data-te-target="#carouselExampleCrossfade"
           data-te-slide="prev"

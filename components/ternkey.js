@@ -2,15 +2,14 @@ import Link from "next/link";
 
 function MyTitle() {
   return (
-    <div className="flex flex-col  items-center justify-between  max-w-5xl mx-auto mt-32">
-      <h2 className="font-serif text-2xl font-normal">
+    <div className="flex flex-col  items-center justify-between  max-w-5xl mx-auto mt-32 ">
+      <h2 className="text-xl font-semibold  pt-16">
         РЕАЛИЗУЕМ ВАШУ ЗАДАЧУ ПОД КЛЮЧ
       </h2>
-      <h3 className="mt-6 font-serif text-base font-normal">
+      <p className="mt-6">
         Мы являемся профессионалами в области доставки и не ограничиваем свой
         спектр услуг
-      </h3>
-      <div></div>
+      </p>
     </div>
   );
 }
@@ -23,9 +22,7 @@ export default function TernKey() {
         style={{ backgroundImage: `url(/images/${pic})` }}
       >
         <div className="pt-6 w-1/2">
-          <h5 className="mb-4 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-            {title}
-          </h5>
+          <h4 className="mb-4 text-xl pr-3">{title}</h4>
           <Link href="/helpful/#contact" className="flex">
             <button
               type="button"
@@ -47,8 +44,8 @@ export default function TernKey() {
       <div className="block">
         <div className="flex justify-between max-w-5xl mx-auto mt-16">
           <MyBtn title="БЕРЕЖНАЯ УПАКОВКА" pic="key1.png" />
-          <MyBtn title="БЕРЕЖНАЯ УПАКОВКА" pic="key2.png" />
-          <MyBtn title="БЕРЕЖНАЯ УПАКОВКА" pic="key3.png" />
+          <MyBtn title="ФУЛФИЛМЕНТ И 3PL" pic="key2.png" />
+          <MyBtn title="ТАМОЖНЯ И ДОКУМЕНТЫ" pic="key3.png" />
         </div>
         <div className="flex justify-between max-w-5xl mx-auto mt-14">
           <MyBtn title="АБОНЕНТСКИЕ ЯЩИКИ" pic="key4.png" />
