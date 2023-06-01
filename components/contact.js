@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
+import { sendContactForm } from "@/lib/api";
 
 function ContactButtons() {
   return (
@@ -88,14 +89,42 @@ function ContactButtons() {
   );
 }
 
-export default function Contact() {
-  const [input, setInput] = useState("");
+const initValues = { name: "", phone: "" };
 
-  function fornHandler(event) {
+export default function Contact() {
+  const [data, setData] = useState({
+    phone: '',
+    name: '',
+  });
+  
+  const handleChangeName = (event) => {
+    setData({
+      ...data,
+      name: event.target.value,
+    });
+  };
+
+  const handleChangePhone = (event) => {
+    setData({
+      ...data,
+      phone: event.target.value,
+    });
+  };
+
+
+
+  const formHandler = async (event) => {
     event.preventDefault();
-    console.log("input");
-    // window.open(myUrl + input);
+    await sendContactForm(data)
+    alert('Запрос отправлен. Спасибо'); 
+    setData({
+      ...data,
+      phone: '',
+      name: '',
+    });
   }
+
+  
 
   return (
     <div
@@ -122,7 +151,7 @@ export default function Contact() {
           <h2 className="text-xl font-semibold">СВЯЖИТЕСЬ С НАМИ</h2>
           <form
             className="flex flex-col  items-center justify-center gap-8 mt-12"
-            onSubmit={fornHandler}
+            onSubmit={formHandler}
           >
             <input
               required
@@ -131,9 +160,8 @@ export default function Contact() {
               className="w-64 rounded-md m-1 border-gray-400 border-2 p-2"
               name="tel"
               id="tel"
-
-              //  valume={input}
-              //  onChange={(e) => setInput(e.target.value)}
+              value={data.phone}
+              onChange={handleChangePhone}
             ></input>
             <input
               required
@@ -142,8 +170,8 @@ export default function Contact() {
               className="w-64 rounded-md m-1 border-gray-400 border-2 p-2"
               name="tel"
               id="tel"
-              //  valume={input}
-              //  onChange={(e) => setInput(e.target.value)}
+              value={data.name}
+              onChange={handleChangeName}
             ></input>
             <button className="w-32 rounded-md m-1 border-gray-400 border-0 p-2 shadow-lg bg-red-600 text-white">
               связаться
