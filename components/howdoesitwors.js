@@ -45,7 +45,7 @@ export default function HowDoesItWors() {
       <h2 className="text-center mb-16 text-xl font-semibold ">
         КАК ЭТО РАБОТАЕТ?
       </h2>
-      <div className="flex justify-between gap-3">
+      <div className="flex justify-between gap-3 flex-wrap">
         <FirstNotStandartButton />
         <HowButton
           title="ПРИЕЗД КУРЬЕРА В УДОБНОЕ ВРЕМЯ"
@@ -58,7 +58,7 @@ export default function HowDoesItWors() {
           number="3"
         />
       </div>
-      <div className="flex justify-between gap-6 mb-12">
+      <div className="flex justify-between gap-6 mb-12 flex-wrap">
         <HowButton
           title="ОФОРМЛЕНИЕ НЕОБХОДИМЫХ ДОКУМЕНТОВ"
           pic="4-icon.png"
@@ -75,7 +75,7 @@ export default function HowDoesItWors() {
           number="6"
         />
       </div>
-      <h2 className="text-xl font-semibold  text-center mb-4">
+      <h2 className="text-xl font-semibold  text-center mb-4 flex-wrap">
         РЕШЕНИЕ ВСЕХ ПРОБЛЕМ
       </h2>
       <p className=" text-center mb-12">

@@ -3,7 +3,7 @@ import Link from "next/link";
 function MainMenuButton({ title, text, mylink }) {
   return (
     <>
-      <div className="justify-between flex flex-col basis-1/4 h-52 rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+      <div className="justify-between flex flex-col basis-1/3 md:basis-1/5 h-52 rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
         <h3 className="mb-2 font-semibold ">{title}</h3>
         <p className="mb-4  ">{text}</p>
         <div className="">
@@ -26,7 +26,7 @@ function MainMenuButton({ title, text, mylink }) {
 export default function MainMenu() {
   return (
     <div
-      className={`pt-16 z-50 flex flex-row items-center justify-between  max-w-5xl mx-auto gap-6`}
+      className={`pt-16 flex items-center justify-between  max-w-5xl mx-auto gap-3 flex-wrap`}
     >
       <MainMenuButton
         title="Доставка по России"

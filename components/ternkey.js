@@ -42,12 +42,12 @@ export default function TernKey() {
     <>
       <MyTitle />
       <div className="block">
-        <div className="flex justify-between max-w-5xl mx-auto mt-16">
+        <div className="flex justify-between max-w-5xl mx-auto mt-16 flex-wrap">
           <MyBtn title="БЕРЕЖНАЯ УПАКОВКА" pic="key1.png" />
           <MyBtn title="ФУЛФИЛМЕНТ И 3PL" pic="key2.png" />
           <MyBtn title="ТАМОЖНЯ И ДОКУМЕНТЫ" pic="key3.png" />
         </div>
-        <div className="flex justify-between max-w-5xl mx-auto mt-14">
+        <div className="flex justify-between max-w-5xl mx-auto mt-14 flex-wrap">
           <MyBtn title="АБОНЕНТСКИЕ ЯЩИКИ" pic="key4.png" />
           <MyBtn title="ОПЕРАТИВНАЯ ПОЛИГРАФИЯ" pic="key5.png" />
           <MyBtn title="ГРАФИЧЕСКИЙ ДИЗАЙН" pic="key6.png" />
