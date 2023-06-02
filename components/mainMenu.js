@@ -25,12 +25,10 @@ function MainMenuButton({ title, text, mylink }) {
 
 export default function MainMenu() {
   return (
-    <div
-      className={`pt-16 flex items-center justify-between  max-w-5xl mx-auto gap-3 flex-wrap`}
-    >
+    <div className="pt-16 flex items-center justify-center max-w-5xl mx-auto gap-8 flex-wrap">
       <MainMenuButton
         title="Доставка по России"
-        text="Грузы и документы из Санкт-Петербурга по РФ"
+        text="Грузы и документы по РФ"
         mylink="/russ"
       />
       <MainMenuButton

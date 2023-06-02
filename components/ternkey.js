@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function MyTitle() {
   return (
-    <div className="flex flex-col  items-center justify-between  max-w-5xl mx-auto mt-32 ">
+    <div className="flex flex-col  items-center justify-between  max-w-5xl mx-auto mt-20 md:mt-32 ">
       <h2 className="text-xl font-semibold  pt-16">
         РЕАЛИЗУЕМ ВАШУ ЗАДАЧУ ПОД КЛЮЧ
       </h2>

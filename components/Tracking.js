@@ -14,7 +14,7 @@ export default function Tracking() {
       className="h-20 bg-slate-600 marker:w-full mb-28 flex justify-center items-center mt-20"
       onSubmit={fornHandler}
     >
-      <form className="flex gap-10">
+      <form className="sm:flex sm:gap-10 block">
         <input
           required
           placeholder="Номер отслеживания"
