@@ -1,6 +1,6 @@
 export default function ImportFromOtherContriesText() {
   return (
-    <div className="mt-28 mb-14 flex flex-col items-start justify-between max-w-5xl mx-auto gap-6">
+    <div className="mt-28  flex flex-col items-start justify-between max-w-5xl mx-auto gap-3 md:gap-6">
       <h2 className="mb-14 self-center text-xl font-semibold ">
         Всё очень сложно, нужно больше информации.
       </h2>

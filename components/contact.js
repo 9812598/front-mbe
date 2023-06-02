@@ -4,7 +4,7 @@ import { sendContactForm } from "@/lib/api";
 
 function ContactButtons() {
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between mt-6 md:mt-0">
       <div className="basis-1/4 flex flex-col items-center justify-center gap-3">
         <Link href="tel: +78123320525" target="_blank">
           <svg
@@ -111,8 +111,6 @@ export default function Contact() {
     });
   };
 
-
-
   const formHandler = async (event) => {
     event.preventDefault();
     await sendContactForm(data)
@@ -124,14 +122,12 @@ export default function Contact() {
     });
   }
 
-  
-
   return (
     <div
       className=" max-w-5xl mx-auto  mt-32 flex flex-col bg-white rounded-lg shadow-lg"
       id="contact"
     >
-      <div className="flex items-center justify-between  ">
+      <div className="md:flex items-center justify-between ">
         <div className="basis-1/2 flex items-center justify-center">
           <script
             src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"
@@ -147,7 +143,7 @@ export default function Contact() {
             hover=""
           />
         </div>
-        <div className="flex flex-col  items-center justify-center basis-1/2">
+        <div className="flex flex-col  items-center justify-center basis-1/2 ">
           <h2 className="text-xl font-semibold">СВЯЖИТЕСЬ С НАМИ</h2>
           <form
             className="flex flex-col  items-center justify-center gap-8 mt-12"

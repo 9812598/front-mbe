@@ -25,7 +25,11 @@ function MainMenuButton({ title, text, mylink }) {
 
 export default function MainMenu() {
   return (
-    <div className="pt-16 flex items-center justify-center max-w-5xl mx-auto gap-8 flex-wrap">
+    <div
+        className="bg-no-repeat bg-cover"
+        style={{ backgroundImage: `url(/images/bg-calc.png)` }}
+      >
+        <div className="pt-16 pb-32 md:pb-20 flex items-center justify-center max-w-5xl mx-auto gap-8 flex-wrap">
       <MainMenuButton
         title="Доставка по России"
         text="Грузы и документы по РФ"
@@ -48,5 +52,7 @@ export default function MainMenu() {
         mylink="/china"
       />
     </div>
+      </div>
+    
   );
 }

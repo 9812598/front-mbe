@@ -2,7 +2,7 @@ export default function Mission() {
   return (
     <div
       id="mission"
-      className="flex flex-row items-center justify-between  max-w-5xl mx-auto mt-32"
+      className="flex flex-row items-center justify-between  max-w-5xl mx-auto md:mt-32 mt-20"
     >
       <div className="basis-2/3">
         <h2 className="text-xl font-semibold ">

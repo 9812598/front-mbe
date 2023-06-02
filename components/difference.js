@@ -3,10 +3,10 @@ import MyCustomButton from "./mycustombutton";
 function DifferentButton({ text, number }) {
   return (
     <div
-      className="bg-no-repeat bg-contain h-36 relative"
+      className="bg-no-repeat bg-contain h-36 relative w-[500px]"
       style={{ backgroundImage: `url(/images/difference.png)` }}
     >
-      <p className="px-14 pt-8">{text}</p>
+      <p className=" pl-20 pr-24 lg:pl-14 lg:pr-14  pt-8">{text}</p>
       <h3 className="text-white absolute left-6 top-10 text-lg font-semibold">
         {number}
       </h3>
@@ -16,14 +16,14 @@ function DifferentButton({ text, number }) {
 
 export default function Difference() {
   return (
-    <div className="mt-28 pt-16 flex flex-col items-center justify-center  max-w-5xl mx-auto gap-6 mb-36">
+    <div className="mt-28 lg:pt-16 flex flex-col items-center justify-center  max-w-5xl mx-auto gap-6 mb-36">
       <h2 className="text-xl font-semibold text-center mb-4">
         ЧЕМ МЫ ОТЛИЧАЕМСЯ ОТ КОНКУРЕНТОВ?
       </h2>
       <h4 className="text-xl text-center mb-12 place-content-center place-items-center">
         Отсутствие отрицательных отзывов в интернете говорит само за себя
       </h4>
-      <div className="grid grid-cols-2 grid-rows-3 gap-x-8 gap-y-4 ">
+      <div className="grid lg:grid-cols-2 lg:grid-rows-3 gap-x-8 gap-y-4 ">
         <DifferentButton
           text="Сделаем все за вас: упакуем, заполним документы, доставим и уведомим"
           number="1"

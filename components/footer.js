@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div className="flex flex-row items-center justify-between max-w-4xl mx-auto p-5 mt-32">
+    <div className="grid gap-3 sm:flex sm:flex-row items-center justify-between max-w-4xl mx-auto p-5 md:mt-32 mt-20">
       <Image
         src="/images/logo.png"
         width={200}

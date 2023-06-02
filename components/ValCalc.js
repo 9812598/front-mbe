@@ -14,8 +14,8 @@ export default function ValCalc() {
   }
 
   return (
-    <div className="flex flex-col  justify-center justify-items-start ">
-      <div className="flex  justify-start content-center">
+    <div className="flex flex-col  justify-center md:justify-items-start ">
+      <div className="flex  justify-center md:justify-start content-center">
         <div className="min-w-min">
           <Image
             src="/images/korob2.png"

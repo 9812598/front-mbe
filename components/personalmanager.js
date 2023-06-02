@@ -13,11 +13,11 @@ export default function PersonalManager() {
           width={500}
           height={512}
           alt="personal manager"
-          className="absolute right-8 pb-16"
+          className="hidden lg:block lg:absolute right-8 pb-16"
         />
         <div className="absolute top-0 left-0 z-50 h-44 w-44"></div>
 
-        <div className="flex flex-col justify-between h-[500px] py-12 w-1/2">
+        <div className="px-4 flex flex-col justify-between h-[500px] py-12 lg:w-1/2">
           <h2 className="text-xl font-semibold">
             ЛИЧНЫЙ МЕНЕДЖЕР ВСЕГДА НА СВЯЗИ
           </h2>

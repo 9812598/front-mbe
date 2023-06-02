@@ -3,12 +3,12 @@ import Link from "next/link";
 function FirstNotStandartButton() {
   return (
     <div
-      className="basis-1/3 bg-no-repeat object-cover flex flex-col justify-start h-96 items-start w-276px "
+      className="basis-1/3 bg-no-repeat object-cover flex flex-col justify-start h-96 items-start min-w-[295px] "
       style={{ backgroundImage: `url(/images/howdoesitwors/1-icon.png)` }}
     >
       <div className="pt-6 w-1/2 pl-12 ">
-        <h2 className="mb-6 text-xl font-semibold  ">1</h2>
-        <h5 className="mb-2 text-xl ">ОФОРМЛЕНИЕ ЗАЯВКИ</h5>
+        <h2 className="mb-6 lg:text-xl font-semibold  ">1</h2>
+        <h5 className="mb-2 lg:text-xl ">ОФОРМЛЕНИЕ ЗАЯВКИ</h5>
       </div>
       <div className="ml-12 mt-16">
         <Link href="/helpful/#contact">
@@ -28,12 +28,12 @@ function FirstNotStandartButton() {
 function HowButton({ title, pic, number }) {
   return (
     <div
-      className="basis-1/3 bg-no-repeat object-cover flex justify-start h-96 items-start w-276px "
+      className="basis-1/3 bg-no-repeat object-cover flex justify-start h-96 items-start min-w-[295px] "
       style={{ backgroundImage: `url(/images/howdoesitwors/${pic})` }}
     >
       <div className="pt-6 w-1/2 pl-12">
-        <h2 className="mb-6 text-xl font-semibold ">{number}</h2>
-        <h3 className="mb-2 text-xl">{title}</h3>
+        <h2 className="mb-6 lg:text-xl font-semibold ">{number}</h2>
+        <h3 className="mb-2 lg:text-xl">{title}</h3>
       </div>
     </div>
   );
@@ -41,11 +41,11 @@ function HowButton({ title, pic, number }) {
 
 export default function HowDoesItWors() {
   return (
-    <div className="mt-32  flex flex-col items-center justify-center  max-w-5xl mx-auto gap-6 ">
-      <h2 className="text-center mb-16 text-xl font-semibold ">
+    <div className=" mt-20 lg:mt-32 flex flex-col items-center justify-center  max-w-5xl mx-auto ">
+      <h2 className="text-center mb-16 lg:text-xl font-semibold ">
         КАК ЭТО РАБОТАЕТ?
       </h2>
-      <div className="flex justify-between gap-3 flex-wrap">
+      <div className="flex justify-center gap-3 flex-wrap">
         <FirstNotStandartButton />
         <HowButton
           title="ПРИЕЗД КУРЬЕРА В УДОБНОЕ ВРЕМЯ"
@@ -57,8 +57,6 @@ export default function HowDoesItWors() {
           pic="3-icon.png"
           number="3"
         />
-      </div>
-      <div className="flex justify-between gap-6 mb-12 flex-wrap">
         <HowButton
           title="ОФОРМЛЕНИЕ НЕОБХОДИМЫХ ДОКУМЕНТОВ"
           pic="4-icon.png"
