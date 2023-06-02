@@ -121,7 +121,7 @@ const MyCarousel = () => {
           data-te-target="#carouselDarkVariant"
           data-te-slide="prev"
         >
-          <span class="inline-block h-8 w-8 dark:grayscale">
+          <span class="inline-block h-8 w-8">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -148,7 +148,7 @@ const MyCarousel = () => {
           data-te-target="#carouselDarkVariant"
           data-te-slide="next"
         >
-          <span class="inline-block h-8 w-8 dark:grayscale">
+          <span class="inline-block h-8 w-8 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

@@ -4,7 +4,7 @@ import MyCustomButton from "./mycustombutton";
 function MyButton({ name, mar }) {
   return (
     <div
-      className={` lg:ralative my-4 ${mar}  rounded-lg bg-white  px-4 py-2  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700`}
+      className={` lg:ralative my-4 ${mar}  rounded-lg bg-white  px-4 py-2  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] `}
     >
       <p className="">{name}</p>
     </div>
@@ -58,7 +58,6 @@ export default function Return() {
         <div className="basis-1/2 flex justify-center">
           <MyCustomButton text="Заказать специальную доставку" />
         </div>
-        
       </div>
     </div>
   );

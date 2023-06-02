@@ -28,7 +28,7 @@ export default function Mission() {
           <h2 class="mb-2  text-xl font-semibold">2500</h2>
           <p class="mb-4">офисов в мире</p>
         </div>
-        <div class="mt-10 block rounded-lg bg-white  pt-3 pb-2 pl-4 pr-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+        <div class="mt-10 block rounded-lg bg-white  pt-3 pb-2 pl-4 pr-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
           <h2 class="mb-2  text-xl font-semibold">44</h2>
           <p class="mb-4 ">страны</p>
         </div>
