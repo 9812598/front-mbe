@@ -5,7 +5,7 @@ export default function MapAndContact() {
   return (
     <>
       <div className="mt-32 relative ">
-        <div className="px-6 absolute left-2 sm:left-20 top-2 sm:top-16 w-96 h-96 bg-white rounded-lg shadow-lg text-center flex flex-col justify-between p-5">
+        <div className="px-6 absolute left-2 sm:left-20 top-2 sm:top-16  w-11/12 sm:w-96 h-96 bg-white rounded-lg shadow-lg text-center flex flex-col justify-between p-5">
           <h2 className="m-4  font-semibold  ">КОНТАКТЫ</h2>
 
           <div className="flex">
