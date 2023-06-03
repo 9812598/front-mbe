@@ -4,7 +4,7 @@ import MyCustomButton from "./mycustombutton";
 function MyButton({ name, mar }) {
   return (
     <div
-      className={` lg:ralative my-4 ${mar}  rounded-lg bg-white  px-4 py-2  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] `}
+      className={` lg:ralative my-4 ${mar}  rounded-lg bg-white  px-4 py-2  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] mb-4 sm:mb-18`}
     >
       <p className="">{name}</p>
     </div>
@@ -13,7 +13,7 @@ function MyButton({ name, mar }) {
 
 export default function Return() {
   return (
-    <div className="flex flex-col  items-center justify-between  max-w-5xl mx-auto mt-32 ">
+    <div className="flex flex-col  items-center justify-between  max-w-5xl mx-auto mt-32 mb-28">
       <h2 className="text-xl font-semibold text-center">
         ВЕРНЕМ ПОЛНУЮ СТОИМОСТЬ ОТПРАВЛЕННЫХ ВЕЩЕЙ, В СЛУЧАЕ ИХ УТРАТЫ ИЛИ
         ПОВРЕЖДЕНИЙ
@@ -55,7 +55,7 @@ export default function Return() {
           пенопакеты, которые повторяют форму предмета, что позволяет
           транспортировать вещи в полной безопасности
         </p>
-        <div className="basis-1/2 flex justify-center">
+        <div className="basis-1/2 flex justify-center ">
           <MyCustomButton text="Заказать специальную доставку" />
         </div>
       </div>

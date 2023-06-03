@@ -4,7 +4,7 @@ export default function Mission() {
       id="mission"
       className="flex flex-row items-center justify-between  max-w-5xl mx-auto md:mt-32 mt-20"
     >
-      <div className="basis-2/3">
+      <div className="basis-2/3 pl-2">
         <h2 className="text-xl font-semibold ">
           Основная миссия - помочь вам развивать свой бизнес и решать все
           вопросы логистики

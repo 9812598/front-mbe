@@ -4,8 +4,8 @@ import { sendContactForm } from "@/lib/api";
 
 function ContactButtons() {
   return (
-    <div className="flex items-center justify-between mt-6 md:mt-0">
-      <div className="basis-1/4 flex flex-col items-center justify-center gap-3">
+    <div className="flex items-center justify-between mt-6 md:mt-0 flex-wrap">
+      <div className="basis-1/2 sm:basis-1/4 flex flex-col items-center justify-center gap-3">
         <Link href="tel: +78123320525" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ function ContactButtons() {
         <p className="pb-4">+7 (812) 332-05-25</p>
       </div>
 
-      <div className="basis-1/4 flex flex-col items-center justify-center gap-3">
+      <div className="basis-1/2 sm:basis-1/4 flex flex-col items-center justify-center gap-3">
         <Link href="mailto: 0008@mbe.spb.ru" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ function ContactButtons() {
         </Link>
         <p className="pb-4">0008@mbe.spb.ru</p>
       </div>
-      <div className="basis-1/4 flex flex-col items-center justify-center gap-3">
+      <div className="basis-1/2 sm:basis-1/4 flex flex-col items-center justify-center gap-3">
         <Link
           target="_blank"
           href="https://api.whatsapp.com/send?phone=79958893818&text=%D0%94%D0%BE%D0%B1%D1%80%D1%8B%D0%B9%20%D0%B4%D0%B5%D0%BD%D1%8C%2C%20%D1%85%D0%BE%D1%82%D0%B5%D0%BB%20%D0%B1%D1%8B%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D1%83."
@@ -66,7 +66,7 @@ function ContactButtons() {
         </Link>
         <p className="pb-4">Whats Up</p>
       </div>
-      <div className="basis-1/4 flex flex-col items-center justify-center gap-3">
+      <div className="basis-1/2 sm:basis-1/4 flex flex-col items-center justify-center gap-3">
         <Link href="https://t.me/MBE_express" target="_blank">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -89,14 +89,12 @@ function ContactButtons() {
   );
 }
 
-const initValues = { name: "", phone: "" };
-
 export default function Contact() {
   const [data, setData] = useState({
-    phone: '',
-    name: '',
+    phone: "",
+    name: "",
   });
-  
+
   const handleChangeName = (event) => {
     setData({
       ...data,
@@ -113,14 +111,14 @@ export default function Contact() {
 
   const formHandler = async (event) => {
     event.preventDefault();
-    await sendContactForm(data)
-    alert('Запрос отправлен. Спасибо'); 
+    await sendContactForm(data);
+    alert("Запрос отправлен. Спасибо");
     setData({
       ...data,
-      phone: '',
-      name: '',
+      phone: "",
+      name: "",
     });
-  }
+  };
 
   return (
     <div

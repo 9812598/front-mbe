@@ -2,12 +2,11 @@ import MyCustomButton from "./mycustombutton";
 
 function DifferentButton({ text, number }) {
   return (
-    <div
-      className="bg-no-repeat bg-contain h-36 relative w-[500px]"
-      style={{ backgroundImage: `url(/images/difference.png)` }}
-    >
-      <p className=" pl-20 pr-24 lg:pl-14 lg:pr-14  pt-8">{text}</p>
-      <h3 className="text-white absolute left-6 top-10 text-lg font-semibold">
+    <div className="sm:bg-no-repeat sm:bg-contain h-36 relative w-11/12 sm:w-[500px] sm:bg-[url('/images/difference.png')]">
+      <p className="pb-3 text-lg sm:text-base pl-14 sm:pl-20 pr-8 sm:pr-18 lg:pl-14 lg:pr-14 pt-8">
+        {text}
+      </p>
+      <h3 className="sm:text-white absolute left-6 top-10 text-lg font-semibold">
         {number}
       </h3>
     </div>

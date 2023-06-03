@@ -76,7 +76,7 @@ const Navbar = () => {
                   >
                     <Menu as="div" className="flex flex-col items-start">
                       <Menu.Button>Рассчитать стоимость</Menu.Button>
-                      <Menu.Items className="flex flex-col gap-1">
+                      <Menu.Items className="flex flex-col gap-2 mt-2 ml-2">
                         <Menu.Item>
                           {({ active }) => (
                             <Link
@@ -188,7 +188,7 @@ const Navbar = () => {
                   >
                     <Menu as="div" className="flex flex-col ">
                       <Menu.Button>Полезная информация</Menu.Button>
-                      <Menu.Items className="flex flex-col">
+                      <Menu.Items className="flex flex-col gap-2 mt-2 ml-2">
                         <Menu.Item>
                           {({ active }) => (
                             <Link
@@ -222,7 +222,7 @@ const Navbar = () => {
               </ul>
             </div>
             {/* Right elements */}
-            <div className="relative flex flex-col justify-between text-white items-center ">
+            <div className="relative flex flex-col justify-between text-white items-center pb-3">
               <p className="p-3  ">+7 (812) 332-05-25</p>
               <p lassName="p-3  ">0008@mbe.spb.ru</p>
             </div>
