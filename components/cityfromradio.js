@@ -1,7 +1,7 @@
-export default function CityFromRadio() {
+export default function CityFromRadio({ text }) {
   return (
     <fieldset className="flex gap-6">
-      <legend className="mb-2">Выберете город отправления:</legend>
+      <legend className="mb-2">{text}</legend>
       <div>
         <input
           className="mr-2"

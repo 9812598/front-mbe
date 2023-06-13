@@ -70,7 +70,7 @@ export default function ExportNotDocs() {
       </form>
       <div className="mt-4">
         <p>
-          Стоимость до двери: <b>{price}</b> долларов
+          Стоимость до двери: <b>{price}</b> рублей
         </p>
         <p>
           Время доставки: <b>{time}</b> дней.

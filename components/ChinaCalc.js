@@ -53,7 +53,7 @@ export default function ChinaCalc() {
               Стоимость до двери: <b>{priceOptima}</b> долларов
             </p>
             <p>
-              Время доставки: <b>55</b> дней
+              Время доставки: <b>15</b> рабочих дней
             </p>
           </div>
         </div>
@@ -67,7 +67,7 @@ export default function ChinaCalc() {
               Стоимость до двери: <b>{priceExpress}</b> долларов
             </p>
             <p>
-              Время доставки: <b>40</b> дней
+              Время доставки: <b>10</b> рабочих дней
             </p>
           </div>
         </div>

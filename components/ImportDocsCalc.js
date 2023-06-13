@@ -25,12 +25,12 @@ export default function ImportDocsCalc() {
 
   return (
     <div className="basis-1/2">
-      <CityFromRadio />
+      <CityFromRadio text="Выберите город доставки:" />
       <form
         className="flex flex-col justify-center content-center mt-3"
         onSubmit={handleSubmit}
       >
-        <label htmlFor="city">Куда доставлять</label>
+        <label htmlFor="city">Откуда доставить</label>
         <Select
           options={countryOptions}
           required

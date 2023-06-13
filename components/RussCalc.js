@@ -67,7 +67,7 @@ export default function RussCalc() {
 
   return (
     <div className="basis-1/2">
-      <CityFromRadio />
+      <CityFromRadio text="Выберите город отправления:" />
       <form
         className="flex flex-col justify-center content-center mt-3"
         onSubmit={handleSubmit}
@@ -104,7 +104,7 @@ export default function RussCalc() {
           <div> Тариф ОПТИМА</div>
           <div>
             <p>
-              Стоимость до двери: <b>{cargo.optimaPrice}</b> долларов
+              Стоимость до двери: <b>{cargo.optimaPrice}</b> рублей
             </p>
             <p>
               Время доставки: <b>{cargo.optimaTime}</b> дней
@@ -118,7 +118,7 @@ export default function RussCalc() {
           <div>Тариф ЭКСПРЕСС</div>
           <div>
             <p>
-              Стоимость до двери: <b>{cargo.expressPrice}</b> долларов
+              Стоимость до двери: <b>{cargo.expressPrice}</b> рублей
             </p>
             <p>
               Время доставки: <b>{cargo.expressTime}</b> дней

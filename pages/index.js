@@ -8,9 +8,8 @@ export default function Home() {
   return (
     <div className="min-h-screen ">
       <MainMenu />
-      <Tracking />
-
       <Mission />
+      <Tracking />
       <TernKey />
       <HowDoesItWors />
     </div>
